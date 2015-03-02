@@ -7,19 +7,43 @@
 package lab2;
 
 /**
- *
- * @author class
+ * 
+ * @author Kenny Tsang and Winnie Wu
  */
+
+import javax.swing.JOptionPane;
+
 public class CoinChanger {
 
     public static void main(String[] args) {
-        // TODO: ask the users for D.
-        int d;
+        final int QUARTER_VALUE = 25;
+        final int DIME_VALUE = 10;
+        final int NICKEL_VALUE = 5;
         
-        // TODO: Compute the amount of change.
-        int quarters;
-        int dimes;
-        int nickels;
+        String input = JOptionPane.showInputDialog("Enter the amount of change: ");
+        int d = Integer.parseInt(input);    // Ask the users for input.
+        
+        System.out.println("You entered: "+input);
+        // Calculate the number of quarters.
+        int quarterCount = d / QUARTER_VALUE;
+        d %= QUARTER_VALUE;
+        
+        // Calculate the number of dimes.
+        int dimeCount = d / DIME_VALUE;
+        d %= DIME_VALUE;
+        
+        int nickelCount = d / NICKEL_VALUE;
+        d %= NICKEL_VALUE;
+        
+        System.out.println("I should have "+quarterCount+" quarters, "+dimeCount+" dimes, "+nickelCount+" nickels.");
+        
+        
+        
+        
+        
+        
+        // print the # of coins in each category.
+        // print the total # of coins.
     }
     
 }
