@@ -12,11 +12,14 @@ package lab2;
  */
 public class CoinChanger {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // TODO: ask the users for D.
+        int d;
+        
+        // TODO: Compute the amount of change.
+        int quarters;
+        int dimes;
+        int nickels;
     }
     
 }
